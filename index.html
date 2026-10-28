@@ -1221,7 +1221,7 @@ self.onmessage = async ({ data: e }) => {
             window.__gdAckFocus();
           }
           window.__gdGameStarted = true;
-          setInterval(requestSave, 10000);
+          setInterval(requestSave, 30000);
           const bootResult = Module._gd_boot();
           setLoadingProgress(99);
           if (bootResult && bootResult.catch) {
